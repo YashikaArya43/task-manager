@@ -5,7 +5,6 @@ import datetime
 app = Flask(__name__)
 app.secret_key = "your_secret_key"
 
-# ---------- Database ----------
 def init_db():
     conn = sqlite3.connect("tasks.db")
     c = conn.cursor()
@@ -112,4 +111,5 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
+
 
