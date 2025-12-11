@@ -24,7 +24,6 @@ def init_db():
 
 init_db()
 
-# ---------- Routes ----------
 @app.route("/")
 def home():
     if "user_id" in session:
@@ -111,5 +110,6 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
+
 
 
